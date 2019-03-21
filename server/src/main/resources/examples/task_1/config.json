@@ -1,0 +1,15 @@
+{
+	"name": "task_1",
+	"config": [
+		{
+			"name": "sth",
+			"value": "default_value",
+			"required": true
+		},
+		{
+			"name": "sth_2",
+			"value": "default_value_2",
+			"required": false
+		}
+	]
+}

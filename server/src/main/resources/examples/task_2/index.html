@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2.0</title>
+    <script>
+        var xhr = new XMLHttpRequest();
+        var vNick = '';
+        var vAge = 3;
+        var vGroup = ''
+        xhr.open('GET', '/task_2/config', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                var json = xhr.responseText;
+                obj = JSON.parse(json);
+                vNick = obj['nick']
+                vAge = obj['age']
+                vGroup = obj['group']
+                <!--window.alert('group = ' + obj['group']);-->
+                <!--window.alert('nick = ' + obj['nick']);-->
+                <!--window.alert('age = ' + obj['age']);-->
+            }
+        }
+        xhr.send(null);
+        function someFun() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/task_2/end', true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.send(JSON.stringify({result: 0.57, group: vGroup, nick: vNick, age: vAge}));
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    <!--window.alert(xhr.responseText);-->
+                    window.location.replace(xhr.responseText);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<img src="./img/image.png" alt="Some image">
+<button onclick="someFun()">End Game</button>
+Task 2.0
+<script src="./js/task_2.js"></script>
+</body>
+</html>
