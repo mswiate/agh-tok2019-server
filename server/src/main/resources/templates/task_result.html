@@ -3,10 +3,10 @@
 <head>
     <title>InFUN</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/input_view.css"/>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/input_view.css}"/>
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
 
     <script>
         var xhr = new XMLHttpRequest();
@@ -40,7 +40,7 @@
             </textarea>
     </div>
 
-    <form action="/newtask" th:align="center">
+    <form action="/tasks/new" th:align="center">
         <input class="btn btn-primary" type="submit" value="Zacznij nowe zadanie"/>
     </form>
 

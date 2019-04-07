@@ -13,9 +13,9 @@ import java.util.Map;
 public interface IGameService {
     List<TaskConfig> getTasks(List<String> jsons);
 
-    void addGame(Game game) throws GameWithSuchIdExistException;
+    void addGame(Game game) throws GameAlreadyExistsException;
 
-    void addUser(String name, int age, String group, String cookie) throws SuchUserExistException;
+    void addUser(String name, int age, String group, String cookie) throws UserAlreadyExistsException;
 
     String getConfig(String task, String cookie) throws NoSuchUserException;
 
@@ -27,7 +27,7 @@ public interface IGameService {
 
     void addResult(String taskName, String cookie, String nick, String group, double result) throws NoSuchGameException, NoSuchUserException;
 
-    Map<String, Double> getResults(String groupId, String cookie) throws NoSuchGameException, LackOfAccessException;
+    Map<String, Double> getResults(String groupId, String cookie) throws NoSuchGameException, AccessDeniedException;
 
     String generateRandomGroupId();
 

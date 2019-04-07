@@ -3,11 +3,11 @@
 <head>
     <title>InFUN</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/input_view.css"/>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/canvasjs.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/input_view.css}"/>
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/canvasjs.min.js}"></script>
 
     <script>
         var chart;
@@ -80,13 +80,13 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/joinGame">InFun</a>
+            <a class="navbar-brand" href="/game/join">InFun</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a th:text="${group_id}"></a></li>
-                <li><a href="/createGame">Stwórz nową grę</a></li>
+                <li><a href="/game/create">Stwórz nową grę</a></li>
                 <li><a id="link" href="/remove">Usuń obecną grę</a></li>
             </ul>
         </div>

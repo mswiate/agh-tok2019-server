@@ -2,37 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6b20f9a-ee3c-4e67-b1a5-9c1d8d160cd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/controllers/InfunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/CannotRemoveGameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/CannotRemoveGameException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/GameWithSuchIdExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameWithSuchIdExistException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/InFunException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/InFunException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/LackOfAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/LackOfAccessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/NoGameSelectedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoGameSelectedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/NoMoreAvailableTasksException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoMoreAvailableTasksException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/NoSuchGameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoSuchGameException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/NoSuchUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoSuchUserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/SuchUserExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/SuchUserExistException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/exceptions/WrongTaskException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/WrongTaskException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/handlers/ExceptionInfunHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/domain/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/domain/TaskResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/TaskResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/requests/CreateGameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateGameInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/requests/CreateGameInputConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateGameInputConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/requests/JoinGameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/JoinGameInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/requests/LastResultResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/LastResultResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/requests/RequestTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/RequestTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/requests/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/model/requests/TaskConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/TaskConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/services/FolderScanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/FolderScanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/services/IFolderScanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IFolderScanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/services/IGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IGameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/utils/InFunUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/utils/InFunUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameWithSuchIdExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/LackOfAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/AccessDeniedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/SuchUserExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/UserAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IGameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/createGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/create_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/end.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/end.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/errorView.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/error_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/joinGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/join_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/taskResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/task_result.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,37 +29,47 @@
     <session id="361157935">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="1" />
-          <entry key="java" value="18" />
+          <entry key="html" value="14" />
+          <entry key="java" value="62" />
           <entry key="js" value="3" />
+          <entry key="properties" value="1" />
           <entry key="s" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="18" />
+          <entry key="CLASS" value="1" />
+          <entry key="HTML" value="14" />
+          <entry key="JAVA" value="62" />
           <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="14" />
+          <entry key="dummy" value="22" />
+          <entry key="html" value="115" />
+          <entry key="java" value="265" />
+          <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14" />
+          <entry key="HTML" value="115" />
+          <entry key="JAVA" value="265" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="Properties" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -83,35 +77,86 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/.gitignore">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/UserAlreadyExistsException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="285" column="9" selection-start-line="285" selection-start-column="9" selection-end-line="285" selection-end-column="9" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular.min.js">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/WrongTaskException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1950">
-              <caret line="134" column="67" selection-start-line="134" selection-start-column="67" selection-end-line="134" selection-end-column="67" />
+            <state relative-caret-position="135">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular-resource.js">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1319" />
+            <state relative-caret-position="150">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/memo/js/adapter-memo.js">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoSuchUserException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-13">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/InFunException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="e#128#129#0" expanded="true" />
+                <element signature="e#151#152#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#288#289#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoGameSelectedException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/AccessDeniedException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -126,54 +171,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/WrongTaskException.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameAlreadyExistsException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/InFunException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -183,6 +188,33 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>idea</find>
+      <find>joinGame</find>
+      <find>GET</find>
+      <find>tasks/new</find>
+      <find>task</find>
+      <find>post</find>
+      <find>manage</find>
+      <find>createGame</find>
+      <find>newtask</find>
+      <find>createGa</find>
+      <find>/createGame&quot;</find>
+      <find>taskResult</find>
+      <find>taskResu</find>
+      <find>res</find>
+      <find>static</find>
+      <find>src=</find>
+      <find>src</find>
+      <find>href</find>
+      <find>join_g</find>
+      <find>join_</find>
+      <find>create_ga</find>
+      <find>task_result</find>
+      <find>end</find>
+      <find>resu</find>
+      <find>SuchUserExistException</find>
+      <find>join</find>
+      <find>errorView</find>
+      <find>lackofacc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,8 +236,24 @@
         <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/Application.java" />
         <option value="$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular.min.js" />
-        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/WrongTaskException.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/taskResult.html" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/create_game.html" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/error_view.html" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/join_game.html" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/task_result.html" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/end.html" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/joinGame.html" />
+        <option value="$PROJECT_DIR$/server/src/main/resources/templates/manage.html" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/InFunException.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameWithSuchIdExistException.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Game.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/AccessDeniedException.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameAlreadyExistsException.java" />
       </list>
     </option>
   </component>
@@ -223,7 +271,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="640" />
     <option name="height" value="716" />
@@ -232,21 +280,10 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="spring-boot-server" type="58d84e3e:PackageViewProjectNode" />
-              <item name="spring-boot-server" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -327,91 +364,7 @@
               <item name="spring-boot-server" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agh" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="toik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="infun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="config" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="spring-boot-server" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agh" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="toik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="infun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="spring-boot-server" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agh" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="toik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="infun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="exceptions" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="spring-boot-server" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agh" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="toik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="infun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="handlers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="spring-boot-server" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agh" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="toik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="infun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="spring-boot-server" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agh" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="toik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="infun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="spring-boot-server" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="pl" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="edu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="agh" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="toik" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="infun" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -442,6 +395,126 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="agh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="agh" type="462c0819:PsiDirectoryNode" />
+              <item name="toik" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="agh" type="462c0819:PsiDirectoryNode" />
+              <item name="toik" type="462c0819:PsiDirectoryNode" />
+              <item name="infun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="agh" type="462c0819:PsiDirectoryNode" />
+              <item name="toik" type="462c0819:PsiDirectoryNode" />
+              <item name="infun" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="agh" type="462c0819:PsiDirectoryNode" />
+              <item name="toik" type="462c0819:PsiDirectoryNode" />
+              <item name="infun" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="agh" type="462c0819:PsiDirectoryNode" />
+              <item name="toik" type="462c0819:PsiDirectoryNode" />
+              <item name="infun" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="agh" type="462c0819:PsiDirectoryNode" />
+              <item name="toik" type="462c0819:PsiDirectoryNode" />
+              <item name="infun" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spring-boot-server" type="58d84e3e:PackageViewProjectNode" />
+              <item name="spring-boot-server" type="616d4139:PackageViewModuleNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -455,9 +528,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554647130023" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554659574826" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -471,7 +548,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.edu.agh.toik.infun.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.edu.agh.toik.infun.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="test.Application" />
@@ -493,8 +583,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application (1)" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Spring Boot.Application" />
       </list>
@@ -511,17 +606,19 @@
       <option name="presentableId" value="Default" />
       <updated>1554643306077</updated>
       <workItem from="1554643307601" duration="1869000" />
-      <workItem from="1554645301305" duration="1790000" />
+      <workItem from="1554645301305" duration="7060000" />
+      <workItem from="1554654818208" duration="4379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3659000" />
+    <option name="totallyTimeSpent" value="13308000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33360258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -532,15 +629,15 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32739726" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32852563" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5219178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32739726" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32739726" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32852563" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32739726" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
@@ -563,64 +660,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/createGame.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IGameService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IFolderScanService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2228">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/FolderScanService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -636,23 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/s">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/s" />
     <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
@@ -667,24 +694,247 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/Application.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/RequestTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/JoinGameInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateGameInputConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/TaskConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IGameService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IFolderScanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateGameInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/dino/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/create_game.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/join_game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/2048/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/task_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="42" />
           <folding>
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/SecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="186">
+          <caret line="118" column="45" lean-forward="true" selection-start-line="118" selection-start-column="45" selection-end-line="118" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#4793#4794#0" expanded="true" />
+            <element signature="e#4829#4830#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/error_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoMoreAvailableTasksException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoSuchGameException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoSuchUserException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/UserAlreadyExistsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/WrongTaskException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoGameSelectedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/InFunException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/AccessDeniedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -695,48 +945,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/InFunException.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameAlreadyExistsException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/WrongTaskException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-boot-server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

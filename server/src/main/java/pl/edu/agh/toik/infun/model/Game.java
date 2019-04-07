@@ -2,7 +2,7 @@ package pl.edu.agh.toik.infun.model;
 
 import com.google.gson.Gson;
 import lombok.Data;
-import pl.edu.agh.toik.infun.exceptions.SuchUserExistException;
+import pl.edu.agh.toik.infun.exceptions.UserAlreadyExistsException;
 import pl.edu.agh.toik.infun.model.requests.TaskConfig;
 
 import java.util.*;
@@ -53,9 +53,9 @@ public class Game {
         return resultList;
     }
 
-    public void addUser(String name, int age, String cookie) throws SuchUserExistException {
+    public void addUser(String name, int age, String cookie) throws UserAlreadyExistsException {
         if (userList.stream().filter(u -> u.getNick().equals(name)).count() > 0) {
-            throw new SuchUserExistException("Użytkownika = " + name + " już istnieje");
+            throw new UserAlreadyExistsException("Użytkownika = " + name + " już istnieje");
         }
         userList.add(new User(name, age, cookie, new ArrayList<>(tasks)));
     }

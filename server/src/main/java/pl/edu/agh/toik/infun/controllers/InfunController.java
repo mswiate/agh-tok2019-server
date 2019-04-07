@@ -1,9 +1,5 @@
 package pl.edu.agh.toik.infun.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
 import pl.edu.agh.toik.infun.exceptions.*;
 import pl.edu.agh.toik.infun.model.Game;
 import pl.edu.agh.toik.infun.model.domain.TaskResult;
@@ -11,6 +7,10 @@ import pl.edu.agh.toik.infun.model.requests.CreateGameInput;
 import pl.edu.agh.toik.infun.model.requests.CreateGameInputConfig;
 import pl.edu.agh.toik.infun.model.requests.JoinGameInput;
 import pl.edu.agh.toik.infun.model.requests.LastResultResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import pl.edu.agh.toik.infun.services.IFolderScanService;
 import pl.edu.agh.toik.infun.services.IGameService;
 
@@ -32,35 +32,35 @@ public class InfunController {
 
     @RequestMapping("/")
     String main() {
-        return "redirect:/joinGame";
+        return "redirect:/game/join";
     }
 
-    @RequestMapping("/createGame")
+    @RequestMapping("/game/create")
     String createGame(Model model, @CookieValue("JSESSIONID") String cookie) {
         CreateGameInput createGameInput = new CreateGameInput(gameService.getTasks(
                 folderScanService.scanFolder())
         );
         model.addAttribute("createGameInput", createGameInput);
 //        System.out.println(createGameInput);
-        return "createGame";
+        return "create_game";
     }
 
-    @RequestMapping(value = "/joinGame", method = RequestMethod.GET)
+    @GetMapping(value = "/game/join")
     String joinGame(Model model, @CookieValue("JSESSIONID") String cookie) {
         model.addAttribute("joinGameInput", new JoinGameInput());
-        return "joinGame";
+        return "join_game";
     }
 
-    @RequestMapping(value = "/joinGame", method = RequestMethod.POST)
-    String getTask(@ModelAttribute JoinGameInput joinGameInput, @CookieValue("JSESSIONID") String cookie, Model model) throws NoSuchUserException, SuchUserExistException, NoSuchGameException {
+    @PostMapping(value = "/game/join")
+    String getTask(@ModelAttribute JoinGameInput joinGameInput, @CookieValue("JSESSIONID") String cookie, Model model) throws NoSuchUserException, UserAlreadyExistsException, NoSuchGameException {
         gameService.addUser(joinGameInput.nick, joinGameInput.age, joinGameInput.groupId, cookie);
-        return "redirect:/newtask";
-    }
-
-    @RequestMapping(value = "/newtask", method = RequestMethod.GET)
-    String getNewTask(@CookieValue("JSESSIONID") String cookie, Model model) {
         return "redirect:/tasks/new";
     }
+//
+//    @GetMapping(value = "/newtask")
+//    String getNewTask(@CookieValue("JSESSIONID") String cookie, Model model) {
+//        return "redirect:/tasks/new";
+//    }
 
 
     @GetMapping("/tasks/new")
@@ -73,7 +73,7 @@ public class InfunController {
     }
 
     @RequestMapping("/manage")
-    String manage(@ModelAttribute("createGameInput") CreateGameInputConfig createGameInputConfig, @CookieValue("JSESSIONID") String cookie, Model model) throws GameWithSuchIdExistException, NoGameSelectedException {
+    String manage(@ModelAttribute("createGameInput") CreateGameInputConfig createGameInputConfig, @CookieValue("JSESSIONID") String cookie, Model model) throws GameAlreadyExistsException, NoGameSelectedException {
 //        System.out.println(createGameInputConfig);
 
         List<String> userChoice = new ArrayList<>();
@@ -100,27 +100,27 @@ public class InfunController {
     }
 
 
-    @RequestMapping(value = "/{task_name}/end", method = RequestMethod.POST)
+    @PostMapping(value = "/{task_name}/end")
     @ResponseBody
     public String endGame(@PathVariable(value = "task_name") final String taskName, @RequestBody TaskResult taskResult, @CookieValue("JSESSIONID") String cookie, Model model) throws NoSuchGameException, NoSuchUserException {
 //        System.out.println("/{task_name}/end -> result " + taskResult + " cookie = " + cookie);
         gameService.addResult(taskName, cookie, taskResult.getNick(), taskResult.getGroup(), taskResult.getResult());
         model.addAttribute("result", taskResult);
-        return "/taskResult";
+        return "/task_result";
     }
 
-    @RequestMapping(value = "/taskResult", method = RequestMethod.GET)
+    @GetMapping(value = "/task_result")
     String taskResult(@CookieValue("JSESSIONID") String cookie, Model model) {
-        return "taskResult";
+        return "task_result";
     }
 
-    @RequestMapping(value = "/end", method = RequestMethod.GET)
+    @GetMapping(value = "/end")
     String end(@CookieValue("JSESSIONID") String cookie, Model model) {
         model.addAttribute("result", "Udało Ci się skończyć wszystkie zadania. \nCałkowity rezultat = " + gameService.getLastResults(cookie).getScore());
         return "end";
     }
 
-    @RequestMapping(value = "/{group_id}/remove", method = RequestMethod.GET)
+    @GetMapping(value = "/{group_id}/remove")
     String endGame(@CookieValue("JSESSIONID") String cookie, @PathVariable(value = "group_id") final String groupId) throws CannotRemoveGameException {
         gameService.removeGame(groupId, cookie);
         return "redirect:/";
@@ -128,7 +128,7 @@ public class InfunController {
 
     @RequestMapping("/{group_id}/results")
     @ResponseBody
-    Map<String, Double> getResults(@PathVariable(value = "group_id") final String groupId, @CookieValue("JSESSIONID") String cookie) throws NoSuchUserException, NoSuchGameException, LackOfAccessException {
+    Map<String, Double> getResults(@PathVariable(value = "group_id") final String groupId, @CookieValue("JSESSIONID") String cookie) throws NoSuchUserException, NoSuchGameException, AccessDeniedException {
 //        gameService.getResults(groupId, cookie).forEach((k, v) -> System.out.println(k + " : " + v));
         return gameService.getResults(groupId, cookie);
     }

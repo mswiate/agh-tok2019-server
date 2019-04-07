@@ -38,17 +38,17 @@ public class GameService implements IGameService {
 
 
     @Override
-    public void addGame(Game game) throws GameWithSuchIdExistException {
+    public void addGame(Game game) throws GameAlreadyExistsException {
         if (games.stream().filter(g -> g.getId().equals(game.getId())).count() > 0) {
-            throw new GameWithSuchIdExistException("Gra z id = " + game.getId() + " już istnieje");
+            throw new GameAlreadyExistsException("Gra z id = " + game.getId() + " już istnieje");
         }
         games.add(game);
     }
 
     @Override
-    public void addUser(String name, int age, String group, String cookie) throws SuchUserExistException {
+    public void addUser(String name, int age, String group, String cookie) throws UserAlreadyExistsException {
         if (games.stream().anyMatch(g -> g.getUserByCookie(cookie).isPresent())) {
-            throw new SuchUserExistException("Użytkownik z ciasteczkiem " + cookie + " już istanieje");
+            throw new UserAlreadyExistsException("Użytkownik z ciasteczkiem " + cookie + " już istanieje");
         }
 
         Optional<Game> game = games.stream().filter(g -> g.getId().equals(group)).findFirst();
@@ -131,13 +131,13 @@ public class GameService implements IGameService {
     }
 
     @Override
-    public Map<String, Double> getResults(String groupId, String cookie) throws NoSuchGameException, LackOfAccessException {
+    public Map<String, Double> getResults(String groupId, String cookie) throws NoSuchGameException, AccessDeniedException {
         Optional<Game> gameOptional = games.stream().filter(g -> g.getId().equals(groupId)).findAny();
         if (!gameOptional.isPresent())
             throw new NoSuchGameException("Nie ma gry z id = " + groupId);
         Game game = gameOptional.get();
         if (!game.getCreatorCookie().equals(cookie))
-            throw new LackOfAccessException("Nie można pobrać wyników ze względu na niewłaściwe ciasteczko");
+            throw new AccessDeniedException("Nie można pobrać wyników ze względu na niewłaściwe ciasteczko");
 
         return game.getUserList().stream().collect(Collectors.groupingBy(User::getNick, Collectors.summingDouble(User::getScore)));
     }
