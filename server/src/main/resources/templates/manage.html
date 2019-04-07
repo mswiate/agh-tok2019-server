@@ -11,9 +11,9 @@
 
     <script>
         var chart;
-        function getResults(groupId) {
+        function getResults(roomId) {
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', '/' + groupId + '/results', false);
+            xhr.open('POST', '/' + roomId + '/results', false);
             xhr.send(null);
             <!--window.alert(xhr.responseText);-->
             var input = JSON.parse(xhr.responseText)
@@ -28,8 +28,8 @@
             return array;
         }
         function getData() {
-            var groupId = document.getElementById("groupID").innerHTML;
-            return getResults(groupId);
+            var roomId = document.getElementById("groupID").innerHTML;
+            return getResults(roomId);
         }
         function createChart() {
             CanvasJS.addColorSet("greenShades",
@@ -80,13 +80,13 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/game/join">InFun</a>
+            <a class="navbar-brand" href="/room/join">InFun</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a th:text="${group_id}"></a></li>
-                <li><a href="/game/create">Stwórz nową grę</a></li>
+                <li><a href="/room/create">Stwórz nową grę</a></li>
                 <li><a id="link" href="/remove">Usuń obecną grę</a></li>
             </ul>
         </div>

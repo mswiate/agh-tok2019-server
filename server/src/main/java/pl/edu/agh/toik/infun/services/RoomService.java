@@ -6,7 +6,7 @@ import org.apache.commons.text.RandomStringGenerator;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 import pl.edu.agh.toik.infun.exceptions.*;
-import pl.edu.agh.toik.infun.model.Game;
+import pl.edu.agh.toik.infun.model.Room;
 import pl.edu.agh.toik.infun.model.User;
 import pl.edu.agh.toik.infun.model.requests.LastResultResponse;
 import pl.edu.agh.toik.infun.model.requests.TaskConfig;
@@ -16,13 +16,13 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 @Service
-public class GameService implements IGameService {
-    private List<Game> games;
+public class RoomService implements IRoomService {
+    private List<Room> rooms;
     private Map<String, TaskConfig> mapTaskNameConfig;
     private Gson gson = new Gson();
 
-    public GameService() {
-        this.games = Collections.synchronizedList(new ArrayList<Game>());
+    public RoomService() {
+        this.rooms = Collections.synchronizedList(new ArrayList<Room>());
         this.mapTaskNameConfig = new ConcurrentHashMap<>();
     }
 
@@ -38,36 +38,36 @@ public class GameService implements IGameService {
 
 
     @Override
-    public void addGame(Game game) throws GameAlreadyExistsException {
-        if (games.stream().filter(g -> g.getId().equals(game.getId())).count() > 0) {
-            throw new GameAlreadyExistsException("Gra z id = " + game.getId() + " już istnieje");
+    public void addRoom(Room room) throws RoomAlreadyExistsException {
+        if (rooms.stream().filter(g -> g.getId().equals(room.getId())).count() > 0) {
+            throw new RoomAlreadyExistsException("Pokój z id = " + room.getId() + " już istnieje");
         }
-        games.add(game);
+        rooms.add(room);
     }
 
     @Override
-    public void addUser(String name, int age, String group, String cookie) throws UserAlreadyExistsException {
-        if (games.stream().anyMatch(g -> g.getUserByCookie(cookie).isPresent())) {
+    public void addUser(String name, int age, String roomId, String cookie) throws UserAlreadyExistsException {
+        if (rooms.stream().anyMatch(g -> g.getUserByCookie(cookie).isPresent())) {
             throw new UserAlreadyExistsException("Użytkownik z ciasteczkiem " + cookie + " już istanieje");
         }
 
-        Optional<Game> game = games.stream().filter(g -> g.getId().equals(group)).findFirst();
-        if (game.isPresent()) {
-            game.get().addUser(name, age, cookie);
+        Optional<Room> room = rooms.stream().filter(g -> g.getId().equals(roomId)).findFirst();
+        if (room.isPresent()) {
+            room.get().addUser(name, age, cookie);
         }
     }
 
     @Override
     public String getConfig(String task, String cookie) throws NoSuchUserException {
         JSONObject config = new JSONObject();
-        for (Game game : games) {
-            Optional<User> user = game.getUserByCookie(cookie);
+        for (Room room : rooms) {
+            Optional<User> user = room.getUserByCookie(cookie);
             if (user.isPresent()) {
-                config.put("group", game.getId());
+                config.put("group", room.getId());
                 config.put("nick", user.get().getNick());
                 config.put("age", user.get().getAge());
                 try {
-                    config.put("config", game.getTasksConfig().stream().filter(t -> t.getName().equals(task)).findFirst().get().getConfig());
+                    config.put("config", room.getTasksConfig().stream().filter(t -> t.getName().equals(task)).findFirst().get().getConfig());
                 } catch (Exception e) {
                     System.out.println("there is no config for " + task);
                     config.put("config", new ArrayList<>());
@@ -80,13 +80,13 @@ public class GameService implements IGameService {
 
     @Override
     public String getRandomTask(String cookie) throws NoMoreAvailableTasksException, NoSuchUserException {
-        Optional<Game> gameOptional = games.stream().filter(g -> g.getUserByCookie(cookie).isPresent()).findFirst();
-        if (!gameOptional.isPresent()) {
+        Optional<Room> roomOptional = rooms.stream().filter(g -> g.getUserByCookie(cookie).isPresent()).findFirst();
+        if (!roomOptional.isPresent()) {
             throw new NoSuchUserException("Nie ma użytkownika z ciasteczkiem = " + cookie);
         }
 
-        Game game = gameOptional.get();
-        Optional<User> userOptional = game.getUserByCookie(cookie);
+        Room room = roomOptional.get();
+        Optional<User> userOptional = room.getUserByCookie(cookie);
         if (!userOptional.isPresent()) {
             throw new NoSuchUserException("Nie ma użytkownika z ciasteczkiem = " + cookie);
         }
@@ -96,33 +96,33 @@ public class GameService implements IGameService {
     }
 
     @Override
-    public boolean isCreator(String groupId, String cookie) {
-        return games
+    public boolean isCreator(String roomId, String cookie) {
+        return rooms
                 .stream()
-                .filter(g -> g.getId().equals(groupId))
+                .filter(g -> g.getId().equals(roomId))
                 .findFirst()
                 .map(g -> g.getCreatorCookie().equals(cookie))
                 .orElse(false);
     }
 
     @Override
-    public void removeGame(String groupId, String cookie) throws CannotRemoveGameException {
-        Optional<Game> game = games.stream().filter(g -> g.getId().equals(groupId) && g.getCreatorCookie().equals(cookie)).findAny();
-        if (game.isPresent() && game.get().getCreatorCookie().equals(cookie)) {
-            games.remove(game.get());
+    public void removeRoom(String roomId, String cookie) throws CannotRemoveRoomException {
+        Optional<Room> room = rooms.stream().filter(g -> g.getId().equals(roomId) && g.getCreatorCookie().equals(cookie)).findAny();
+        if (room.isPresent() && room.get().getCreatorCookie().equals(cookie)) {
+            rooms.remove(room.get());
         } else {
-            throw new CannotRemoveGameException("Nie można usunąć gry o id = " + groupId);
+            throw new CannotRemoveRoomException("Nie można usunąć pokoju o id = " + roomId);
         }
     }
 
     @Override
-    public void addResult(String taskName, String cookie, String nick, String group, double result) throws NoSuchGameException, NoSuchUserException {
-        Optional<Game> game = games.stream().filter(g -> g.getId().equals(group)).findFirst();
-        if (!game.isPresent()) {
-            throw new NoSuchGameException("Nie ma gry o id = " + group);
+    public void addResult(String taskName, String cookie, String nick, String roomId, double result) throws NoSuchRoomException, NoSuchUserException {
+        Optional<Room> room = rooms.stream().filter(g -> g.getId().equals(roomId)).findFirst();
+        if (!room.isPresent()) {
+            throw new NoSuchRoomException("Nie ma pokoju o id = " + roomId);
         }
 
-        Optional<User> user = game.get().getUserList().stream().filter(u -> u.getNick().equals(nick) && u.getCookieValue().equals(cookie)).findFirst();
+        Optional<User> user = room.get().getUserList().stream().filter(u -> u.getNick().equals(nick) && u.getCookieValue().equals(cookie)).findFirst();
         if (!user.isPresent()) {
             throw new NoSuchUserException("Nie ma użytkownika = " + user + ", z ciasteczkiem = " + cookie);
         }
@@ -131,36 +131,36 @@ public class GameService implements IGameService {
     }
 
     @Override
-    public Map<String, Double> getResults(String groupId, String cookie) throws NoSuchGameException, AccessDeniedException {
-        Optional<Game> gameOptional = games.stream().filter(g -> g.getId().equals(groupId)).findAny();
-        if (!gameOptional.isPresent())
-            throw new NoSuchGameException("Nie ma gry z id = " + groupId);
-        Game game = gameOptional.get();
-        if (!game.getCreatorCookie().equals(cookie))
+    public Map<String, Double> getResults(String roomId, String cookie) throws NoSuchRoomException, AccessDeniedException {
+        Optional<Room> roomOptional = rooms.stream().filter(g -> g.getId().equals(roomId)).findAny();
+        if (!roomOptional.isPresent())
+            throw new NoSuchRoomException("Nie ma pokoju z id = " + roomId);
+        Room room = roomOptional.get();
+        if (!room.getCreatorCookie().equals(cookie))
             throw new AccessDeniedException("Nie można pobrać wyników ze względu na niewłaściwe ciasteczko");
 
-        return game.getUserList().stream().collect(Collectors.groupingBy(User::getNick, Collectors.summingDouble(User::getScore)));
+        return room.getUserList().stream().collect(Collectors.groupingBy(User::getNick, Collectors.summingDouble(User::getScore)));
     }
 
     @Override
-    public String generateRandomGroupId() {
+    public String generateRandomRoomId() {
         RandomStringGenerator randomStringGenerator = new RandomStringGenerator.Builder()
                 .withinRange('0', 'z')
                 .filteredBy(CharacterPredicates.ASCII_UPPERCASE_LETTERS)
                 .build();
-        String groupId;
-        while (containsGroupId(groupId = randomStringGenerator.generate(10))) {
+        String roomId;
+        while (containsRoomId(roomId = randomStringGenerator.generate(10))) {
         }
 
-        return groupId;
+        return roomId;
     }
 
     @Override
     public LastResultResponse getLastResults(String cookie) {
-        Optional<Game> gameOptional = games.stream().filter(g -> g.getUserByCookie(cookie).isPresent()).findFirst();
-        if (gameOptional.isPresent()) {
-            Game game = gameOptional.get();
-            Optional<User> userOptional = game.getUserByCookie(cookie);
+        Optional<Room> roomOptional = rooms.stream().filter(g -> g.getUserByCookie(cookie).isPresent()).findFirst();
+        if (roomOptional.isPresent()) {
+            Room room = roomOptional.get();
+            Optional<User> userOptional = room.getUserByCookie(cookie);
             if (userOptional.isPresent()) {
                 User user = userOptional.get();
                 LastResultResponse lastResultResponse = new LastResultResponse();
@@ -180,8 +180,8 @@ public class GameService implements IGameService {
 
     @Override
     public void checkUserCurrentTask(String task, String cookie) throws WrongTaskException {
-        for (Game game : games) {
-            for (User user : game.getUserList()) {
+        for (Room room : rooms) {
+            for (User user : room.getUserList()) {
                 if (user.getCookieValue().equals(cookie)) {
                     if (!user.getCurrentTask().equals(task)) {
                         throw new WrongTaskException("Zła gra: " + task);
@@ -193,7 +193,7 @@ public class GameService implements IGameService {
     }
 
 
-    private boolean containsGroupId(String groupId) {
-        return games.stream().filter(g -> g.getId().equals(groupId)).count() > 0;
+    private boolean containsRoomId(String roomId) {
+        return rooms.stream().anyMatch(g -> g.getId().equals(roomId));
     }
 }

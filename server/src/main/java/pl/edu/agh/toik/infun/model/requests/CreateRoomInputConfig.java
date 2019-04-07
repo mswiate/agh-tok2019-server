@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class CreateGameInputConfig {
-    public String groupId;
+public class CreateRoomInputConfig {
+    public String roomId;
     public int taskNumber = 10;
     public List<String> tasksConfig = new ArrayList<>();
 }

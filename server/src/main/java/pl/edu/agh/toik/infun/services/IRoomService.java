@@ -2,7 +2,7 @@ package pl.edu.agh.toik.infun.services;
 
 import org.springframework.stereotype.Service;
 import pl.edu.agh.toik.infun.exceptions.*;
-import pl.edu.agh.toik.infun.model.Game;
+import pl.edu.agh.toik.infun.model.Room;
 import pl.edu.agh.toik.infun.model.requests.LastResultResponse;
 import pl.edu.agh.toik.infun.model.requests.TaskConfig;
 
@@ -10,26 +10,26 @@ import java.util.List;
 import java.util.Map;
 
 @Service
-public interface IGameService {
+public interface IRoomService {
     List<TaskConfig> getTasks(List<String> jsons);
 
-    void addGame(Game game) throws GameAlreadyExistsException;
+    void addRoom(Room room) throws RoomAlreadyExistsException;
 
-    void addUser(String name, int age, String group, String cookie) throws UserAlreadyExistsException;
+    void addUser(String name, int age, String room, String cookie) throws UserAlreadyExistsException;
 
     String getConfig(String task, String cookie) throws NoSuchUserException;
 
     String getRandomTask(String cookie) throws NoMoreAvailableTasksException, NoSuchUserException;
 
-    boolean isCreator(String groupId, String cookie);
+    boolean isCreator(String roomId, String cookie);
 
-    void removeGame(String groupId, String cookie) throws CannotRemoveGameException;
+    void removeRoom(String roomId, String cookie) throws CannotRemoveRoomException;
 
-    void addResult(String taskName, String cookie, String nick, String group, double result) throws NoSuchGameException, NoSuchUserException;
+    void addResult(String taskName, String cookie, String nick, String room, double result) throws NoSuchRoomException, NoSuchUserException;
 
-    Map<String, Double> getResults(String groupId, String cookie) throws NoSuchGameException, AccessDeniedException;
+    Map<String, Double> getResults(String roomId, String cookie) throws NoSuchRoomException, AccessDeniedException;
 
-    String generateRandomGroupId();
+    String generateRandomRoomId();
 
     LastResultResponse getLastResults(String cookie);
 

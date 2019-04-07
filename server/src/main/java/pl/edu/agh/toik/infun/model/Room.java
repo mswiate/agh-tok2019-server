@@ -9,21 +9,21 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Data
-public class Game {
+public class Room {
     private String id;
     private List<TaskConfig> tasksConfig;
     private List<String> tasks;
     private List<User> userList;
     private String creatorCookie;
     private int taskNumber;
-    private Gson gson = new Gson();
+    private Gson gson;
     private Random random;
 
-    public Game(String id, List<TaskConfig> tasksConfig, String creatorCookie, int taskNumber) {
+    public Room(String id, List<TaskConfig> tasksConfig, String creatorCookie, int taskNumber) {
         this.random = new Random();
         this.gson = new Gson();
         this.id = id;
-        this.userList = Collections.synchronizedList(new ArrayList<User>());
+        this.userList = Collections.synchronizedList(new ArrayList<>());
         this.tasksConfig = tasksConfig;
         this.tasks = createTasksSequence(tasksConfig.stream().map(TaskConfig::getName).collect(Collectors.toList()), taskNumber);
         this.creatorCookie = creatorCookie;
@@ -54,8 +54,8 @@ public class Game {
     }
 
     public void addUser(String name, int age, String cookie) throws UserAlreadyExistsException {
-        if (userList.stream().filter(u -> u.getNick().equals(name)).count() > 0) {
-            throw new UserAlreadyExistsException("Użytkownika = " + name + " już istnieje");
+        if (userList.stream().anyMatch(u -> u.getNick().equals(name))) {
+            throw new UserAlreadyExistsException("Użytkownik = " + name + " już istnieje");
         }
         userList.add(new User(name, age, cookie, new ArrayList<>(tasks)));
     }

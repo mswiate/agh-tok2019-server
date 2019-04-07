@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class CreateGameInput {
-    public String groupId;
+public class CreateRoomInput {
+    public String roomId;
     public int taskNumber = 10;
     public List<TaskConfig> tasksConfig = new ArrayList<>();
 
-    public CreateGameInput(List<TaskConfig> tasks) {
+    public CreateRoomInput(List<TaskConfig> tasks) {
         this.tasksConfig = tasks;
     }
 }
