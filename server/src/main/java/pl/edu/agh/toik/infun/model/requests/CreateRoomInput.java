@@ -9,7 +9,7 @@ import java.util.List;
 public class CreateRoomInput {
     public String roomId;
     public int taskNumber = 10;
-    public List<TaskConfig> tasksConfig = new ArrayList<>();
+    public List<TaskConfig> tasksConfig;
 
     public CreateRoomInput(List<TaskConfig> tasks) {
         this.tasksConfig = tasks;

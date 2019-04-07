@@ -3,33 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d6b20f9a-ee3c-4e67-b1a5-9c1d8d160cd4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/CannotRemoveGameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/CannotRemoveRoomException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/GameAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/RoomAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoGameSelectedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoRoomSelectedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoSuchGameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/NoSuchRoomException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/TaskResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/TaskResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateGameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateGameInputConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInputConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/JoinGameInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/JoinRoomInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/IRoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/static/js/canvasjs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/static/js/canvasjs.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/2048/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/2048/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/dino/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/dino/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery-2.1.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery-2.1.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/hanoi/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/jigsaw/js/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/jigsaw/js/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/sokoban/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/sokoban/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tasks/tetris/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/tasks/tetris/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/create_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/create_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/end.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/end.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/join_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/join_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/templates/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/templates/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/RequestTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/Task.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,9 +30,10 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="29" />
-          <entry key="java" value="102" />
-          <entry key="js" value="7" />
+          <entry key="html" value="30" />
+          <entry key="java" value="114" />
+          <entry key="js" value="8" />
+          <entry key="json" value="1" />
           <entry key="md" value="1" />
           <entry key="properties" value="1" />
           <entry key="s" value="1" />
@@ -63,9 +42,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="HTML" value="29" />
-          <entry key="JAVA" value="102" />
-          <entry key="JavaScript" value="7" />
+          <entry key="HTML" value="30" />
+          <entry key="JAVA" value="114" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="1" />
@@ -75,14 +55,14 @@
         <counts>
           <entry key="dummy" value="67" />
           <entry key="html" value="155" />
-          <entry key="java" value="510" />
+          <entry key="java" value="512" />
           <entry key="properties" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="155" />
-          <entry key="JAVA" value="510" />
+          <entry key="JAVA" value="512" />
           <entry key="PLAIN_TEXT" value="67" />
           <entry key="Properties" value="2" />
         </counts>
@@ -91,66 +71,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/join_room.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="23" column="56" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/resources/templates/manage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="87" column="42" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1060#1061#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#4744#4745#0" expanded="true" />
-                <element signature="e#4780#4781#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/RoomService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="119" column="51" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/TaskResult.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -164,37 +84,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/TaskConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="90">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInputConfig.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="15">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/dino/index.html">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+            <state relative-caret-position="-336">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/JoinRoomInput.java">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/FolderScanService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/resources/examples/task_1/config.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/resources/examples/task_1/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-366" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -203,7 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>join</find>
       <find>errorView</find>
       <find>lackofacc</find>
       <find>Game(</find>
@@ -233,6 +197,7 @@
       <find>out.println</find>
       <find>system.out</find>
       <find>mana</find>
+      <find>//</find>
     </findStrings>
     <replaceStrings>
       <replace>RoomId</replace>
@@ -264,7 +229,6 @@
         <option value="$PROJECT_DIR$/server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/server/src/main/resources/templates/error_view.html" />
         <option value="$PROJECT_DIR$/server/src/main/resources/templates/task_result.html" />
-        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/server/src/main/resources/templates/joinGame.html" />
         <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/exceptions/InFunException.java" />
@@ -287,6 +251,8 @@
         <option value="$PROJECT_DIR$/server/src/main/resources/templates/manage.html" />
         <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/controllers/InfunController.java" />
         <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/RoomService.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java" />
+        <option value="$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java" />
       </list>
     </option>
   </component>
@@ -496,140 +462,7 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="agh" type="462c0819:PsiDirectoryNode" />
-              <item name="toik" type="462c0819:PsiDirectoryNode" />
-              <item name="infun" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="agh" type="462c0819:PsiDirectoryNode" />
-              <item name="toik" type="462c0819:PsiDirectoryNode" />
-              <item name="infun" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="agh" type="462c0819:PsiDirectoryNode" />
-              <item name="toik" type="462c0819:PsiDirectoryNode" />
-              <item name="infun" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="agh" type="462c0819:PsiDirectoryNode" />
-              <item name="toik" type="462c0819:PsiDirectoryNode" />
-              <item name="infun" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="agh" type="462c0819:PsiDirectoryNode" />
-              <item name="toik" type="462c0819:PsiDirectoryNode" />
-              <item name="infun" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pl" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="agh" type="462c0819:PsiDirectoryNode" />
-              <item name="toik" type="462c0819:PsiDirectoryNode" />
-              <item name="infun" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="task_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-              <item name="task_1" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="2048" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="dino" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-boot-server" type="b2602c69:ProjectViewProjectNode" />
@@ -663,7 +496,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554667492818" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554667675407" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -743,18 +576,17 @@
       <updated>1554643306077</updated>
       <workItem from="1554643307601" duration="1869000" />
       <workItem from="1554645301305" duration="7060000" />
-      <workItem from="1554654818208" duration="11965000" />
+      <workItem from="1554654818208" duration="12462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20894000" />
+    <option name="totallyTimeSpent" value="21391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33360258" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33360258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -765,13 +597,13 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32739726" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5219178" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5219178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32739726" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32739726" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32739726" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -796,26 +628,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/FolderScanService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular-resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1319" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/memo/js/adapter-memo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/s" />
     <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/memo/lib/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1950">
@@ -848,13 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -935,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/RequestTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -963,13 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/TaskConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1002,16 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="27" column="75" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1058,20 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/resources/examples/task_1/js/fun.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/resources/tasks/2048/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="84" column="57" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1082,13 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1096,56 +860,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/TaskResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInputConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/JoinRoomInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1191,6 +905,129 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
           <caret line="132" column="14" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInputConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/JoinRoomInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/RequestTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/LastResultResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/examples/task_1/js/fun.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/examples/task_1/config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/resources/examples/task_1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-366" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/CreateRoomInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/domain/TaskResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/requests/TaskConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/Room.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/services/FolderScanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/handlers/ExceptionInfunHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/pl/edu/agh/toik/infun/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
