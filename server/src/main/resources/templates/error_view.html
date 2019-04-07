@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>InFUN</title>
+    <title>InFun - error</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
     <link rel="stylesheet" type="text/css" th:href="@{/css/input_view.css}"/>
@@ -10,24 +10,25 @@
 </head>
 <body>
 
+
     <div class="container data thumbnail">
 
-        <div class="alert alert-success" style="text-align: center;">
-            <strong>SUKCES</strong>
+        <div class="alert alert-danger" style="text-align: center;">
+            <strong>Błąd</strong>
         </div>
 
         <div style="white-space: pre-line">
-            <label for="comment">Wynik:</label>
-
-            <textarea rows="5" disabled="true" class="form-control" id="comment" th:text="${result}">
+            <label for="comment">Wiadomość błędu:</label>
+            <textarea rows="5" disabled="true" class="form-control" id="comment" th:text="${error}">
             </textarea>
         </div>
 
-        <form action="/room/join" th:align="center">
+        <form action="/" th:align="center">
             <input class="btn btn-primary" type="submit" value="Dołącz do innej gry"/>
         </form>
 
     </div>
+
 
 </body>
 </html>
