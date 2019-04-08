@@ -25,7 +25,15 @@
                 array.push(item);
             }
             <!--window.alert(array);-->
-            return array;
+            array.sort(function (a, b) {
+                if(b.y !== a.y) return b.y - a.y;
+                return a.label < b.label;
+            });
+
+            for (var i = 0; i < array.length; i++) {
+                array[i].label =  (i + 1) + '. ' +  array[i].label;
+            }
+            return array.reverse();
         }
         function getData() {
             var roomId = document.getElementById("groupID").innerHTML;
