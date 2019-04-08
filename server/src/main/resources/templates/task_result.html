@@ -19,8 +19,12 @@
                 obj = JSON.parse(json);
                 score = obj['score'];
                 lastResult = obj['lastResult'];
+                rank =  obj['rank'];
                 color = obj['color'];
-                document.getElementById("comment").value = 'Ostatni wynik = ' + lastResult + '\nCałkowity wynik = ' + score;
+                document.getElementById("comment").value = 'Ostatni wynik = '
+                    + lastResult + '\nCałkowity wynik = '
+                    + score +'\nTwoje miejsce = ' + rank ;
+
                 document.getElementById("user_color_bar").style = "background-color: " + color + ";";
             }
         }
