@@ -2,8 +2,10 @@ package pl.edu.agh.toik.infun.model;
 
 import com.google.gson.Gson;
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.edu.agh.toik.infun.exceptions.UserAlreadyExistsException;
 import pl.edu.agh.toik.infun.model.requests.TaskConfig;
+import pl.edu.agh.toik.infun.services.RandomColor;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -18,6 +20,12 @@ public class Room {
     private int taskNumber;
     private Gson gson;
     private Random random;
+    private RandomColor randomColor;
+
+    @Autowired
+    public void setRandomColor(final RandomColor randomColor) {
+        this.randomColor = randomColor;
+    }
 
     public Room(String id, List<TaskConfig> tasksConfig, String creatorCookie, int taskNumber) {
         this.random = new Random();
@@ -28,6 +36,7 @@ public class Room {
         this.tasks = createTasksSequence(tasksConfig.stream().map(TaskConfig::getName).collect(Collectors.toList()), taskNumber);
         this.creatorCookie = creatorCookie;
         this.taskNumber = taskNumber;
+        this.randomColor = new RandomColor();
     }
 
     private List<String> createTasksSequence(List<String> tasks, int taskNumber) {
@@ -57,7 +66,8 @@ public class Room {
         if (userList.stream().anyMatch(u -> u.getNick().equals(name))) {
             throw new UserAlreadyExistsException("Użytkownik = " + name + " już istnieje");
         }
-        userList.add(new User(name, age, cookie, new ArrayList<>(tasks)));
+        final String color = this.randomColor.getColor(this.userList.size());
+        userList.add(new User(name, age, color, cookie, new ArrayList<>(tasks)));
     }
 
 

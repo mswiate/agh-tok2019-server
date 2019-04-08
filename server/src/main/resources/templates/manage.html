@@ -16,13 +16,15 @@
             xhr.open('POST', '/' + roomId + '/results', false);
             xhr.send(null);
             <!--window.alert(xhr.responseText);-->
-            var input = JSON.parse(xhr.responseText)
+            var results = JSON.parse(xhr.responseText);
             var array = [];
-            for (var name in input) {
+            for (var result of results) {
                 item = {};
-                item.label = name;
-                item.y = input[name];
+                item.label = result.userName;
+                item.y = result.score;
+                item.color = result.color;
                 array.push(item);
+                console.log('item', item, result);
             }
             <!--window.alert(array);-->
             array.sort(function (a, b) {
@@ -40,7 +42,7 @@
             return getResults(roomId);
         }
         function createChart() {
-            CanvasJS.addColorSet("greenShades",
+            /*CanvasJS.addColorSet("greenShades",
                 [//colorSet Array
 
                 "#2F4F4F",
@@ -48,7 +50,7 @@
                 "#2E8B57",
                 "#3CB371",
                 "#90EE90"
-                ]);
+                ]);*/
 
             chart = new CanvasJS.Chart("chartContainer", {
 
