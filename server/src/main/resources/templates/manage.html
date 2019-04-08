@@ -33,7 +33,8 @@
             });
 
             for (var i = 0; i < array.length; i++) {
-                array[i].label =  (i + 1) + '. ' +  array[i].label;
+                var rank = array.filter(function(v) {return v > array[i].y}).length + 1;
+                array[i].label =  rank + '. ' +  array[i].label;
             }
             return array.reverse();
         }
