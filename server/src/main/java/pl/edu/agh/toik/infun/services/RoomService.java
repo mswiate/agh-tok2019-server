@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import pl.edu.agh.toik.infun.exceptions.*;
 import pl.edu.agh.toik.infun.model.Room;
 import pl.edu.agh.toik.infun.model.User;
+import pl.edu.agh.toik.infun.model.domain.UserResult;
 import pl.edu.agh.toik.infun.model.requests.LastResultResponse;
 import pl.edu.agh.toik.infun.model.requests.TaskConfig;
 
@@ -118,7 +119,7 @@ public class RoomService implements IRoomService {
 
     @Override
     public void addResult(String taskName, String cookie, String nick, String roomId, double result) throws NoSuchRoomException, NoSuchUserException {
-        Optional<Room> room = rooms.stream().filter(g -> g.getId().equals(roomId)).findFirst();
+        final Optional<Room> room = this.getRoomById(roomId);
         if (!room.isPresent()) {
             throw new NoSuchRoomException("Nie ma pokoju o id = " + roomId);
         }
@@ -132,15 +133,24 @@ public class RoomService implements IRoomService {
     }
 
     @Override
-    public Map<String, Double> getResults(String roomId, String cookie) throws NoSuchRoomException, AccessDeniedException {
-        Optional<Room> roomOptional = rooms.stream().filter(g -> g.getId().equals(roomId)).findAny();
+    public Optional<Room> getRoomById(String roomId) {
+        return rooms.stream().filter(g -> g.getId().equals(roomId)).findFirst();
+    }
+
+    @Override
+    public List<UserResult> getResults(String roomId, String cookie) throws NoSuchRoomException, AccessDeniedException {
+        Optional<Room> roomOptional = this.getRoomById(roomId);
         if (!roomOptional.isPresent())
             throw new NoSuchRoomException("Nie ma pokoju z id = " + roomId);
         Room room = roomOptional.get();
         if (!room.getCreatorCookie().equals(cookie))
             throw new AccessDeniedException("Nie można pobrać wyników ze względu na niewłaściwe ciasteczko");
-
-        return room.getUserList().stream().collect(Collectors.groupingBy(User::getNick, Collectors.summingDouble(User::getScore)));
+        return room.getUserList()
+                .stream()
+                .sorted(Comparator.comparingDouble(User::getScore))
+                .map(UserResult::fromUser)
+                .collect(Collectors.toList());
+        //return room.getUserList().stream().collect(Collectors.groupingBy(User::getNick, Collectors.summingDouble(User::getScore)));
     }
 
     @Override
@@ -172,6 +182,7 @@ public class RoomService implements IRoomService {
                         .map(User::getScore)
                         .filter(s -> s > user.getScore() )
                         .count());
+                lastResultResponse.setColor(user.getColor());
                 return lastResultResponse;
             }
         }

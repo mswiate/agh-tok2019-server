@@ -13,6 +13,7 @@ import static pl.edu.agh.toik.infun.utils.InFunUtils.RESET;
 public class User {
     private String nick;
     private int age;
+    private String color;
     private String cookieValue;
     private double score;
     private double lastResult;
@@ -20,9 +21,11 @@ public class User {
     private int completedNumber;
     private String currentTask;
 
-    public User(String nick, int age, String cookieValue, List<String> taskList) {
+
+    public User(String nick, int age, String color, String cookieValue, List<String> taskList) {
         this.nick = nick;
         this.age = age;
+        this.color = color;
         this.cookieValue = cookieValue;
         this.availableTasks = taskList;
         this.lastResult = 0;
