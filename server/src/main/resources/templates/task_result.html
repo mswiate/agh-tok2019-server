@@ -19,7 +19,10 @@
                 obj = JSON.parse(json);
                 score = obj['score']
                 lastResult = obj['lastResult']
-                document.getElementById("comment").value = 'Ostatni wynik = ' + lastResult + '\nCałkowity wynik = ' + score;
+                rank =  obj['rank']
+                document.getElementById("comment").value = 'Ostatni wynik = '
+                    + lastResult + '\nCałkowity wynik = '
+                    + score +'\nTwoje miejsce = ' + rank ;
             }
         }
         xhr.send(null);

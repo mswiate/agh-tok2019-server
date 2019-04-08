@@ -14,6 +14,7 @@ import pl.edu.agh.toik.infun.model.requests.TaskConfig;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 public class RoomService implements IRoomService {
@@ -166,6 +167,11 @@ public class RoomService implements IRoomService {
                 LastResultResponse lastResultResponse = new LastResultResponse();
                 lastResultResponse.setLastResult(user.getLastResult());
                 lastResultResponse.setScore(user.getScore());
+                lastResultResponse.setRank(1 + room.getUserList()
+                        .stream()
+                        .map(User::getScore)
+                        .filter(s -> s > user.getScore() )
+                        .count());
                 return lastResultResponse;
             }
         }

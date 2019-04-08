@@ -5,5 +5,6 @@ import lombok.Data;
 @Data
 public class LastResultResponse {
     private double score;
+    private double rank;
     private double lastResult;
 }
