@@ -6,4 +6,5 @@ import lombok.Data;
 public class LastResultResponse {
     private double score;
     private double lastResult;
+    private String color;
 }

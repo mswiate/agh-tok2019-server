@@ -17,13 +17,20 @@
             if (xhr.readyState == XMLHttpRequest.DONE) {
                 var json = xhr.responseText;
                 obj = JSON.parse(json);
-                score = obj['score']
-                lastResult = obj['lastResult']
+                score = obj['score'];
+                lastResult = obj['lastResult'];
+                color = obj['color'];
                 document.getElementById("comment").value = 'Ostatni wynik = ' + lastResult + '\nCałkowity wynik = ' + score;
+                document.getElementById("user_color_bar").style = "background-color: " + color + ";";
             }
         }
         xhr.send(null);
     </script>
+    <style>
+        #user_color_bar {
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
 
@@ -38,6 +45,8 @@
 
         <textarea rows="5" disabled="true" class="form-control" id="comment" th:text="${result}">
             </textarea>
+        <h2>Znajdź swój kolor w tabeli wyników!</h2>
+        <div id="user_color_bar"></div>
     </div>
 
     <form action="/tasks/new" th:align="center">

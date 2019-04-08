@@ -1,21 +1,21 @@
 package pl.edu.agh.toik.infun.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import pl.edu.agh.toik.infun.exceptions.*;
 import pl.edu.agh.toik.infun.model.Room;
+import pl.edu.agh.toik.infun.model.domain.UserResult;
 import pl.edu.agh.toik.infun.model.domain.TaskResult;
 import pl.edu.agh.toik.infun.model.requests.CreateRoomInput;
 import pl.edu.agh.toik.infun.model.requests.CreateRoomInputConfig;
 import pl.edu.agh.toik.infun.model.requests.JoinRoomInput;
 import pl.edu.agh.toik.infun.model.requests.LastResultResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
 import pl.edu.agh.toik.infun.services.IFolderScanService;
 import pl.edu.agh.toik.infun.services.IRoomService;
 
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 
@@ -128,7 +128,7 @@ public class InfunController {
 
     @RequestMapping("/{room_id}/results")
     @ResponseBody
-    Map<String, Double> getResults(@PathVariable(value = "room_id") final String roomId, @CookieValue("JSESSIONID") String cookie) throws NoSuchUserException, NoSuchRoomException, AccessDeniedException {
+    List<UserResult> getResults(@PathVariable(value = "room_id") final String roomId, @CookieValue("JSESSIONID") String cookie) throws NoSuchUserException, NoSuchRoomException, AccessDeniedException {
 //        roomService.getResults(roomId, cookie).forEach((k, v) -> System.out.println(k + " : " + v));
         return roomService.getResults(roomId, cookie);
     }
