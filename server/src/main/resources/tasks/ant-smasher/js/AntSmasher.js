@@ -78,9 +78,9 @@ function draw() {
     } else {
         fill(0);
         noStroke();
-        textSize(60);
+        textSize(24);
         textAlign(CENTER);
-        text("Tap to start", width / 2, height / 2);
+        text("Naciśnij, aby rozpocząć", width / 2, height / 2);
     }
 
     //end lines:
@@ -91,7 +91,7 @@ function draw() {
 
     drawScore();
 
-    if (score === 20)
+    if (score === 20 || score > 20)
         endGame();
 
     gameOver(playing);
@@ -143,7 +143,7 @@ function handleBugs() {
             endGame();
         }
 
-        if (bugs[i].squashed) {
+        if (bugs[i].squashed && (!bugs[i].type)) {
             // remove from bugs array
 
             bugs.splice(i, 1);
@@ -190,20 +190,20 @@ function gameOver(playing) {
 
     if (!playing) {
         // only if the game has ended
-        fill(0);
-        noStroke();
-        textSize(60);
-        textAlign(CENTER);
-
-
-        text("Your score:", width / 2, height / 2);
-
-
-        textSize(60);
-        text(min(1.0, score / 20.0),
-            width / 2, height / 2 + 70);
-        textAlign(LEFT);
-        textSize(30);
+        // fill(0);
+        // noStroke();
+        // textSize(60);
+        // textAlign(CENTER);
+        //
+        //
+        // text("Your score:", width / 2, height / 2);
+        //
+        //
+        // textSize(60);
+        // text(min(1.0, score / 20.0),
+        //     width / 2, height / 2 + 70);
+        // textAlign(LEFT);
+        // textSize(30);
         sendScoreAndReturnControl(min(1.0, score / 20.0))
     }
 }
